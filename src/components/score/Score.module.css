@@ -1,0 +1,30 @@
+.number {
+  font-weight: 700;
+  font-size: 64px;
+  color: #BE2F21;
+}
+
+.number p{
+  margin: 0 !important;
+}
+
+.score{
+  display: flex;
+  flex-direction: column;
+}
+
+.number_img {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.number_img img {
+  margin-left: 10px;
+}
+
+.number_text p{
+  text-transform: uppercase;
+  margin: 0 !important;
+  font-size: 24px;
+}

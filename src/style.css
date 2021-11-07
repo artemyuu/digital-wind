@@ -1,0 +1,44 @@
+@import url(./variables.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1426px;
+}
+
+.accent-btn-outline {
+  color: var(--accent-color);
+  background-color: white;
+  border: 1px solid var(--accent-color);
+  transition: all .5s ease;
+}
+
+.accent-btn-outline:hover {
+  color: white;
+  background-color: var(--accent-color);
+  transition: .5s ease;
+}
+
+.accent-btn {
+  color: white;
+  background-color: var(--accent-color);
+  transition: .5s ease;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  height: calc(100vh - 56px);
+}
+
+.main .main__content {
+  background-color: #F6F6F6;
+  width: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,57 @@
+.winner
+{
+  margin-top: 290px;
+  margin-left: 133px;
+	position: relative;
+}
+
+.winner-img
+{
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: -110px;
+  height: 281px;
+  width: 281px;
+  object-fit: cover;
+}
+
+.winner-text p {
+  margin: 0px 23px;
+  margin-top: 8px;
+}
+
+.winner-text p:first-child {
+  margin-top: 10px;
+}
+
+.winner-text
+{
+  width: 333px;
+  height: 144px;
+  background-color: white;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.winner-name
+{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.winner-rank
+{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--accent-color);
+}
+
+.winner-nomination
+{
+	font-size: 18px;
+  line-height: 21px;
+}

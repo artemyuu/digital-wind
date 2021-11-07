@@ -1,0 +1,19 @@
+.top-menu {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.top-menu .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 72px;
+}
+
+.search {
+}
