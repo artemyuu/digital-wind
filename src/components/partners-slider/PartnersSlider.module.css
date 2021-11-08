@@ -1,0 +1,11 @@
+.partners-slider {
+  padding: 20px 0;
+  color: red;
+  display: flex;
+}
+
+.partners-slider img {
+  height: 150px;
+  object-fit: scale-down;
+}
+

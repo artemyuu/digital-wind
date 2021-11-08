@@ -1,0 +1,59 @@
+.footer {
+  background-color: var(--accent-color);
+  padding: 60px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.have-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 17.2713px;
+  line-height: 24px;
+  color: white;
+  width: 361px;
+}
+
+.have-questions input,
+.have-questions textarea {
+  padding: 13px 22px;
+  border: none;
+  background-color: #9D251A;
+  color: white;
+}
+
+.have-questions input::placeholder,
+.have-questions textarea::placeholder {
+  color: #E34333;
+}
+
+
+.have-questions input {
+  height: 49px;
+}
+
+.have-questions p {
+  margin: 0;
+}
+
+.have-questions textarea {
+  height: 175px;
+  resize: none;
+}
+
+
+.have-questions button {
+  height: 56.82px;
+  color: #9D251A;
+  border: none;
+  cursor: pointer;
+}  
+
+.footer__map {
+  
+}

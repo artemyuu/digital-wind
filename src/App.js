@@ -8,6 +8,9 @@ import Aboutcontest from "./components/about-contest/AboutContest";
 import Scorebar from "./components/score-bar/ScoreBar";
 import SectionTitle from "./components/section-title/SectionTitle";
 import Winners from "./components/winners/Winners";
+import Works from "./components/works/Works";
+import PartnersSlider from "./components/partners-slider/PartnersSlider";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -21,6 +24,11 @@ function App() {
           <Scorebar/>
           <SectionTitle title="наши победители"/>
           <Winners />
+          <SectionTitle title="работы участников"/>
+          <Works />
+          <SectionTitle title="наши партнёры"/>
+          <PartnersSlider />
+          <Footer />
         </div>
       </main>
     </div>
