@@ -11,6 +11,12 @@ import Winners from "./components/winners/Winners";
 import Works from "./components/works/Works";
 import PartnersSlider from "./components/partners-slider/PartnersSlider";
 import Footer from "./components/footer/Footer";
+import CatalogPage from "./components/catalog-page/CatalogPage";
+import CardWorkPage from "./components/card-work-page/CardWorkPage";
+import AccountPage from "./components/account-page/AccountPage";
+import NewsPage from "./components/news-page/NewsPage";
+import FaqPage from "./components/faq-page/FaqPage";
+import CardNewsPage from "./components/card-news-page/CardNewsPage";
 
 function App() {
   return (
@@ -18,8 +24,8 @@ function App() {
       <TopMenu/>
       <main className="main">
         <NavBar />
-        <div className="main__content">
-          <SlideHeader/>         
+        <div className="main__content custom-scroll">
+          {/* <SlideHeader/>         
           <Aboutcontest/>
           <Scorebar/>
           <SectionTitle title="наши победители"/>
@@ -28,7 +34,12 @@ function App() {
           <Works />
           <SectionTitle title="наши партнёры"/>
           <PartnersSlider />
-          <Footer />
+          <Footer /> */}
+          {/* <CatalogPage /> */}
+          {/* <CardWorkPage /> */}
+          {/* <AccountPage /> */}
+          {/* <NewsPage /> */}
+          <CardNewsPage />
         </div>
       </main>
     </div>

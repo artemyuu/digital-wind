@@ -1,0 +1,7 @@
+.news {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 356px;
+  grid-gap: 40px 38px;
+  padding: 32px 0;
+}

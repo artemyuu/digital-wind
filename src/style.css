@@ -57,6 +57,15 @@
   overflow-y: auto;
 }
 
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 10px;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: var(--accent-color) !important;

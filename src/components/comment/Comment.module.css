@@ -1,0 +1,20 @@
+.comment {
+  width: 100%;
+  padding: 6px 9px;
+  background-color: white;
+  box-shadow: 0px 0px 11.9px rgba(0, 0, 0, 0.2);
+}
+
+span i {
+  color:#6F6F6F
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-body {
+  margin: 0;
+  margin-top: 10px;
+}
