@@ -34,3 +34,39 @@ a {
   line-height: 19px;
   text-align: center;
 }
+
+@media (max-width: 320px) {
+  .card-work {
+    width: 174px;
+    flex-direction: column-reverse;
+  }
+
+  .card-work__info {
+    padding: 4px 6px;
+  }
+
+  .card-work__img {
+    object-fit: cover;
+    height: 90px;
+  }
+
+  .card-work__title {
+    font-size: 11px;
+    line-height: 12.89px;
+  }
+
+  .card-work__description {
+    font-size: 9px;
+    line-height: 11px;
+    margin: 0;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+  .card-work__star {
+    height: 16px;
+  }
+}

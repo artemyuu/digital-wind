@@ -12,10 +12,12 @@ import slide_4 from '../../images/partners/4.png';
 
 
 const PartnersSlider = () => {
+  const { innerWidth: width } = window;
+
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: width === 320 ? 1 : 4 ,
     slidesToScroll: 1,
     autoplay: true,
   };

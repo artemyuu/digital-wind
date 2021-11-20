@@ -6,6 +6,13 @@
   padding: 10px 0;
 }
 
+@media (max-width: 320px) {
+  .top-menu  {
+    height: 30px;
+    padding: 0;
+  }
+}
+
 .top-menu .wrapper {
   display: flex;
   justify-content: space-between;
@@ -13,6 +20,17 @@
 
 .logo {
   margin-left: 72px;
+}
+
+@media (max-width: 320px) {
+  .logo  {
+    margin-left: 5px;
+    height: 20px;
+  }
+  
+  .top-menu .wrapper {
+    display: none;
+  }
 }
 
 .search {

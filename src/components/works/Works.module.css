@@ -5,3 +5,16 @@
   grid-row-gap: 3em;
   padding: 50px 0;
 }
+
+@media (max-width: 320px){
+  .works {
+    grid-template-columns: 1fr;
+    padding: 24px 0;
+    grid-row-gap: 2em;
+    justify-items: center;
+  }
+
+  .works a:nth-child(4) {
+    display: none;
+  } 
+}

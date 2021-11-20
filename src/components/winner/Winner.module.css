@@ -56,3 +56,42 @@
 	font-size: 18px;
   line-height: 21px;
 }
+
+
+@media (max-width: 320px) {
+  .winner-text p {
+    margin: 3px 6px;
+  }
+
+  .winner {
+    margin-top: 140px;
+    margin-left: 111px;
+  }
+
+  .winner-name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .winner-nomination {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .winner-rank {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .winner-img {
+    height: 145px;
+    width: 145px;
+    bottom: 53px;
+    left: -50px;
+  }
+
+  .winner-text {
+    width: 172px;
+    height: 75px;
+  }
+}

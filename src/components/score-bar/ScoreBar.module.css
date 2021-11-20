@@ -8,3 +8,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 320px) {
+  .score-bar {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .wrapper {
+    padding-bottom: 6px;
+  }
+}

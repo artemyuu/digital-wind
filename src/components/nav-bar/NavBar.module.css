@@ -5,6 +5,15 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 320px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+
+
 .nav-list__item a{
   display: flex;
   flex-direction: column;

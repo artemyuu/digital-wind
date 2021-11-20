@@ -23,7 +23,7 @@ const CardWork = (props) => {
             {props.description}
           </p>
         </div>
-        <img src={img} alt="" />
+        <img className={style["card-work__img"]} src={img} alt="" />
       </div>
     </a>
   );

@@ -4,34 +4,35 @@ import catalog from '../../images/catalog-i.svg';
 import faq from '../../images/faq-i.svg';
 import news from '../../images/news-i.svg';
 import home from '../../images/home-i.svg';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className={style["nav-bar"]}>
       <ul className={style["nav-list"]}>
         <li className={style["nav-list__item"]}>
-          <a href="#">
+          <Link to="/">
             <img src={home} alt="home" />
             <span>Главная</span>
-          </a>
+          </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <a href="#">
+          <Link to="/catalog">
             <img src={catalog} alt="catalog" />
             <span>Каталог работ</span>
-          </a>
+          </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <a href="#">
+          <Link to="/news">
             <img src={news} alt="news" />
             <span>Новости</span>
-          </a>
+          </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <a href="#">
+          <Link to="faq">
             <img src={faq} alt="faq" />
             <span>FAQ</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

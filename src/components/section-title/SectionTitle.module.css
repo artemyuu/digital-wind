@@ -11,3 +11,13 @@
   font-size: 36px;
   color: white;
 }
+
+@media(max-width: 320px) {
+  .section-title {
+    padding: 10px 0;
+  }
+
+  .section-title__title {
+    font-size: 18px;
+  }
+}
