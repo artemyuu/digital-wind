@@ -1,0 +1,45 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  /* padding-bottom: 5px; */
+}
+
+.close-btn {
+  margin-left: 220px;
+}
+
+.header-text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  background: white;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--accent-color);
+  border: var(--accent-color-border-btn);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.submit-btn:hover {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+.register-link {
+  align-self: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.registation-form {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}

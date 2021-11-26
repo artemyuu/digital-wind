@@ -1,6 +1,7 @@
 import React from 'react';
 import Winner from '../winner/Winner';
 import style from './Winners.module.css'
+import winner from '../../images/winner.png'
 
 const Winners = () => {
   return (
@@ -10,37 +11,37 @@ const Winners = () => {
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
         <Winner
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
         <Winner
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
         <Winner
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
         <Winner
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
         <Winner
           name="Акимов Михаил"
           place="1"
           nomination="Двумерная статичная графика"
-          img="winner.png"
+          img={winner}
         />
       </div>
     </div>

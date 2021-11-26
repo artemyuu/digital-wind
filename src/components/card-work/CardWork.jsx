@@ -2,11 +2,12 @@ import React from 'react';
 import style from './CardWork.module.css';
 import star from '../../images/star-i.svg';
 import nonstar from '../../images/nonstar-i.svg';
+import { Link } from 'react-router-dom';
 
 const CardWork = (props) => {
   const img = require('../../images/' + props.img).default;
   return (
-    <a href="">
+    <Link to="/catalog/1">
       <div className={style["card-work"]}>
         <div className={style["card-work__info"]}>
           <h4 className={style["card-work__title"]}>
@@ -25,7 +26,7 @@ const CardWork = (props) => {
         </div>
         <img className={style["card-work__img"]} src={img} alt="" />
       </div>
-    </a>
+    </Link>
   );
 }
 

@@ -1,8 +1,7 @@
 import React from 'react';
-import work from '../../images/work-i.svg';
-import banner from '../../images/banner.png'
 import '../../variables.css';
 import style from './SlideHeader.module.css';
+import work from '../../images/work-i.svg'
 
 const SlideHeader = () => {
   return (

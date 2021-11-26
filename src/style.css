@@ -76,6 +76,10 @@
   padding: 0 20px !important;
 }
 
+.MuiTextField-root {
+  color: red;
+}
+
 @media (max-width: 320px) {
   .main  {
     height: calc(100vh - 30px);

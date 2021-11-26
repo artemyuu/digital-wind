@@ -2,7 +2,6 @@ import React from 'react';
 import style from './Score.module.css'
 
 const Score = (props) => {
-  const img = require('../../images/' + props.img).default;
   return (
     <div className={style["score"]}>
       <div className={style["number_img"]}>
@@ -10,7 +9,7 @@ const Score = (props) => {
             <p>{props.score}</p>
         </div>
         <div className={style["img_score"]}>
-            <img  className={style["score_icons"]} src={img} alt="" />
+            <img  className={style["score_icons"]} src={props.img} alt="" />
         </div>
       </div>
     <div className={style["number_text"]}>

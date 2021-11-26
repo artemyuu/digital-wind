@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './CardWorkPage.module.css';
-import workImg from '../../images/bigwork.png';
-import star from '../../images/star-i.svg';
 import SectionTitle from '../section-title/SectionTitle';
-import Comment from '../comment/Comment'
+import Comment from '../comment/Comment';
+import img from '../../images/star-i.svg';
+import bigwork from "../../images/bigwork.png";
 
 const CardWorkPage = () => {
   return (
@@ -11,7 +11,7 @@ const CardWorkPage = () => {
     <SectionTitle title="Карточка работы"/>
     <div className="container">
       <div className={style["card-work-page"]}>
-        <img className={style["card-work-page-img"]} src={workImg} alt="" />
+        <img className={style["card-work-page-img"]} src={bigwork} alt="" />
         <div className={style["card-work-page-info"]}>
           <h2 className={style["card-work-page-info__title"]}>
             Воздушный мир
@@ -20,11 +20,11 @@ const CardWorkPage = () => {
             Высоко в небесах существует архипелаг воздушных островов, населенных Эльфеями: крошечными человечками с узорчатыми крыльями...
           </p>
           <div className={style["card-work-page-info__rating"]}>
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
+            <img src={img} alt="" />
+            <img src={img} alt="" />
+            <img src={img} alt="" />
+            <img src={img} alt="" />
+            <img src={img} alt="" />
           </div>
           <p className={style["card-work-page-info__number"]}>
             <b>Номер работы: </b> 93919

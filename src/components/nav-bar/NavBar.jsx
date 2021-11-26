@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './NavBar.module.css';
-import catalog from '../../images/catalog-i.svg';
-import faq from '../../images/faq-i.svg';
-import news from '../../images/news-i.svg';
-import home from '../../images/home-i.svg';
 import { Link } from 'react-router-dom';
+import home from '../../images/home-i.svg';
+import catalog from '../../images/catalog-i.svg';
+import news from '../../images/news-i.svg';
+import faq from '../../images/faq-i.svg';
 
 const NavBar = () => {
   return (

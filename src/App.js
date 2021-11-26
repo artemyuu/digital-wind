@@ -23,9 +23,9 @@ function App() {
             <div className="main__content custom-scroll">
               <ScrollToTop />
               <Routes>
-                <Route path="/" element={<MainPage />}/>
+                <Route exact path="/" element={<MainPage />}/>
                 <Route path="/catalog" element={<CatalogPage />}/>
-                <Route path="/news" element={<NewsPage />}/>
+                <Route exact path="/news" element={<NewsPage />}/>
                 <Route path="/news/1" element={<CardNewsPage />}/>
                 <Route path="/faq" element={<FaqPage />}/>
                 <Route path="/catalog/1" element={<CardWorkPage />}/>
