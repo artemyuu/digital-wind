@@ -32,7 +32,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "/build",
+  "homepage": "artemyuu.github.io",
   "browserslist": {
     "production": [
       ">0.2%",
