@@ -11,25 +11,25 @@ const NavBar = () => {
     <nav className={style["nav-bar"]}>
       <ul className={style["nav-list"]}>
         <li className={style["nav-list__item"]}>
-          <Link to="/">
+          <Link to="/digital-wind/">
             <img src={home} alt="home" />
             <span>Главная</span>
           </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <Link to="/catalog">
+          <Link to="/digital-wind/catalog">
             <img src={catalog} alt="catalog" />
             <span>Каталог работ</span>
           </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <Link to="/news">
+          <Link to="/digital-wind/news">
             <img src={news} alt="news" />
             <span>Новости</span>
           </Link>
         </li>
         <li className={style["nav-list__item"]}>
-          <Link to="faq">
+          <Link to="/digital-wind/faq">
             <img src={faq} alt="faq" />
             <span>FAQ</span>
           </Link>

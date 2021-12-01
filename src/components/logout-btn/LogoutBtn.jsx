@@ -9,12 +9,12 @@ const LogoutBtn = (props) => {
   const logout = () => {
     toggleAuth(isAuth);
     localStorage.removeItem('isAuth');
-    if(window.location.pathname === '/account') window.location.pathname = ''
+    if(window.location.pathname === '/digital-wind/account') window.location.pathname = ''
   }
 
   return (
     <div className={style["logout-btn"]}>
-      <Link to="/account" className={style["account-link"]}> Личный кабинет </Link>
+      <Link to="/digital-wind/account" className={style["account-link"]}> Личный кабинет </Link>
       <span onClick={logout}>Выйти</span>
       <img src={icon} alt="logout" />
     </div>

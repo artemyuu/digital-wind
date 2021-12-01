@@ -23,13 +23,13 @@ function App() {
             <div className="main__content custom-scroll">
               <ScrollToTop />
               <Routes>
-                <Route exact path="/" element={<MainPage />}/>
-                <Route path="/catalog" element={<CatalogPage />}/>
-                <Route exact path="/news" element={<NewsPage />}/>
-                <Route path="/news/1" element={<CardNewsPage />}/>
-                <Route path="/faq" element={<FaqPage />}/>
-                <Route path="/catalog/1" element={<CardWorkPage />}/>
-                <Route path="/account" element={<AccountPage />}/>
+                <Route exact path="/digital-wind/" element={<MainPage />}/>
+                <Route path="/digital-wind/catalog" element={<CatalogPage />}/>
+                <Route exact path="/digital-wind/news" element={<NewsPage />}/>
+                <Route path="/digital-wind/news/1" element={<CardNewsPage />}/>
+                <Route path="/digital-wind/faq" element={<FaqPage />}/>
+                <Route path="/digital-wind/catalog/1" element={<CardWorkPage />}/>
+                <Route path="/digital-wind/account" element={<AccountPage />}/>
               </Routes>
             </div>
         </main>

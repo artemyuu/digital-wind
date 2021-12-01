@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const CardWork = (props) => {
   const img = require('../../images/' + props.img).default;
   return (
-    <Link to="/catalog/1">
+    <Link to="/digital-wind/catalog/1">
       <div className={style["card-work"]}>
         <div className={style["card-work__info"]}>
           <h4 className={style["card-work__title"]}>
