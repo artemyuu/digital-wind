@@ -12,6 +12,11 @@
   max-width: 1426px;
 }
 
+.container-1200 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .page-link {
   letter-spacing: 0.015em;
   font-size: 18px;
@@ -42,7 +47,15 @@
 .accent-btn {
   color: white;
   background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   transition: .5s ease;
+  cursor: pointer;
+}
+
+.accent-btn:hover {
+  background-color: white;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .main {
@@ -78,6 +91,11 @@
 
 .MuiTextField-root {
   color: red;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: red !important;
+  border-color: pink !important;
 }
 
 @media (max-width: 320px) {

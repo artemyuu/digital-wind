@@ -1,0 +1,60 @@
+.admin-app {
+  height: calc(100vh - 78.39px);
+  background-color: #F6F6F6;
+}
+
+.admin-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.admin-menu__link a{
+  color: black;
+  text-decoration: none;
+}
+
+.admin-menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 290.59px;
+}
+
+.admin-menu li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.admin-menu a:hover {
+  color: var(--accent-color);
+}
+
+.admin-menu .active:hover {
+  color: white;
+}
+
+.active {
+  background-color: var(--accent-color);
+  color: white !important;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.admin-content {
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: white;
+  flex: 1;
+  margin-left: 20px;
+  max-height: 850px;
+  padding: 15px;
+}

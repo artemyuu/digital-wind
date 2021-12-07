@@ -9,7 +9,7 @@ const LogoutBtn = (props) => {
   const logout = () => {
     toggleAuth(isAuth);
     localStorage.removeItem('isAuth');
-    if(window.location.pathname === '/digital-wind/account') window.location.pathname = ''
+    if(window.location.pathname === '/digital-wind/account' || window.location.pathname === '/digital-wind/add-work') window.location.pathname = '/digital-wind/'
   }
 
   return (

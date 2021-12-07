@@ -43,3 +43,9 @@
   display: flex;
   flex-direction: column;
 }
+
+.invalid-login {
+  width: 210px;
+  color: red;
+  text-align: center;
+}

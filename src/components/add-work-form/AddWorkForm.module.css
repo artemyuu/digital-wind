@@ -1,0 +1,29 @@
+.add-work-form {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+  padding: 35px 48px;
+  background-color: white;
+  margin-top: 46px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.add-work-form input, select {
+  margin-bottom: 20px;
+}
+
+.add-work-form input[type=text], select {
+  height: 40px;
+  border: 1px solid #DBDBDB;
+  background-color: #F9F9F9;
+  padding: 0 10px;
+
+}
+
+.add-work-form button {
+  height: 57px;
+  font-size: 16px;
+  line-height: 19px;
+}

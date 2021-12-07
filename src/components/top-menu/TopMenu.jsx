@@ -25,7 +25,7 @@ const TopMenu = () => {
       <Search />
       <div className={style.wrapper}>
         <AuthModal toggleAuth={toggleAuth} isAuth={isAuth} toggleModal={toggleModal} isModal={isModal}/>
-        <SendWorkBtn />  
+        <SendWorkBtn toggleModal={toggleModal} />  
         {isAuth ? <LogoutBtn toggleAuth={toggleAuth} isAuth={isAuth} /> :<LoginBtn toggleModal={toggleModal}/>}
       </div>
     </div>

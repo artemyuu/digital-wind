@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import style from './AuthModal.module.css';
 import close from '../../images/close-i.svg'
 
+import { userService } from '../../services/userService';
+
 const styles = theme => ({
   notchedOutline: {},
   focused: {
@@ -29,14 +31,23 @@ const modalStyle = {
 
 const AuthModal = (props) => {
   const [ modalLogin, setModalLogin ] = useState(true);
+  const [ loginInput, setLoginInput ] = useState('');
+  const [ passwordInput, setPasswordInput ] = useState('');
+  const [ invalidLogin, setInvalidLogin ] = useState(false);
   const { toggleModal, isModal } = props;
   const { toggleAuth, isAuth } = props;
 
   const login = (e) => {
     e.preventDefault();
-    toggleModal(isModal);
-    toggleAuth(isAuth);
-    localStorage.setItem('isAuth', true);
+    const loggedUser = userService.login(loginInput, passwordInput)
+    if(loggedUser) {
+      toggleModal(isModal);
+      toggleAuth(isAuth);
+      localStorage.setItem('isAuth', JSON.stringify(loggedUser));
+    }
+    else {
+      setInvalidLogin(true);
+    }
   }
 
   return (
@@ -50,20 +61,21 @@ const AuthModal = (props) => {
       modalLogin ?
       <form className={style["modal-form"]}>
           <h2 className={style["header-text"]}>Авторизация</h2>
-          <TextField id="outlined-basic" label="Логин" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-          <TextField id="outlined-basic" type="password" label="Пароль" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+          <TextField label="Логин" variant="outlined" size="small" color="error" margin="dense" autoComplete="off" value={loginInput} onChange={ (e) => setLoginInput(e.target.value) }/>
+          <TextField type="password" label="Пароль" variant="outlined" size="small" color="error" margin="dense" autoComplete="off" value={passwordInput} onChange={ (e) => setPasswordInput(e.target.value) }/>
         <button className={style["submit-btn"]} onClick={(e)=> login(e)}>Войти</button>
         <p className={style["register-link"]} onClick={()=>setModalLogin(!modalLogin)}>Регистрация</p>
+        {invalidLogin ? <p className={style["invalid-login"]}>Неправильный логин или пароль</p> : ''}
       </form> :
       <form className={style["registation-form"]}>
          <h2 className={style["header-text"]}>Регистрация</h2>
-         <TextField id="outlined-basic" label="Логин" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" type="password" label="Пароль" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" label="E-mail" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" label="Фамилия" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" label="Имя" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" label="Отчество" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField id="outlined-basic" label="Мобильный" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+         <TextField label="Логин" variant="outlined" size="small" color="error" margin="dense" value="" autoComplete="off"/>
+         <TextField type="password" label="Пароль" variant="outlined" size="small" color="error" value="" margin="dense" autoComplete="off"/>
+         <TextField label="E-mail" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+         <TextField label="Фамилия" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+         <TextField label="Имя" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+         <TextField label="Отчество" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
+         <TextField label="Мобильный" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
         <button  className={style["submit-btn"]}>Зарегистрироватся</button>
         <p className={style["register-link"]} onClick={()=>setModalLogin(!modalLogin)}>Войти</p>
       </form>
