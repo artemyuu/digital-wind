@@ -57,4 +57,5 @@
   margin-left: 20px;
   max-height: 850px;
   padding: 15px;
+  overflow-y: auto;
 }

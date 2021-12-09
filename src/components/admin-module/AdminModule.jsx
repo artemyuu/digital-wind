@@ -7,6 +7,7 @@ import style from './AdminModule.module.css';
 import AdminCMS from './pages/admin-cms/AdminCMS';
 import { Link } from 'react-router-dom';
 import AdminWorkReg from './pages/admin-work-reg/AdminWorkReg';
+import AdminUserReg from './pages/admin-user-reg/AdminUserReg';
 
 const AdminModule = () => {
   const location = useLocation();
@@ -29,14 +30,15 @@ const AdminModule = () => {
               <Link to="/digital-wind/admin/reg-work" className={ splitLocation === 'reg-work' ? style["active"] : ''}>Регистрация работы</Link>
             </li>
             <li className={style["admin-menu__link"]}>
-              <Link to="#" >меню 4</Link>
+              <Link to="/digital-wind/admin/user-reg" className={ splitLocation === 'user-reg' ? style["active"] : ''}>Регистрация личного кабинета</Link>
             </li>
           </ul>
-          <div className={style['admin-content']}>
+          <div className={style['admin-content'] + ' custom-scroll'}>
             <Routes>
               <Route path="/digital-wind/admin/applications" element={<AdminApplications/>} />
               <Route path="/digital-wind/admin/cms" element={<AdminCMS/>} />
               <Route path="/digital-wind/admin/reg-work" element={<AdminWorkReg/>} />
+              <Route path="/digital-wind/admin/user-reg" element={<AdminUserReg/>} />
             </Routes>
           </div>
         </div>

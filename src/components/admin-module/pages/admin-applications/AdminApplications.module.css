@@ -1,0 +1,20 @@
+.applications tr td a {
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.applications .applications-list {
+  width: 200px;
+  margin: 0;
+}
+
+.applications .applications-list li {
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+
+.applications tr td:nth-child(3) {
+}
