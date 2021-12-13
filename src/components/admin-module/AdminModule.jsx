@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import AdminWorkReg from './pages/admin-work-reg/AdminWorkReg';
 import AdminUserReg from './pages/admin-user-reg/AdminUserReg';
 import AdminUser from './pages/admin-users/AdminUser';
+import AdminNews from './pages/admin-news/AdminNews';
 
 const AdminModule = () => {
   const location = useLocation();
@@ -28,6 +29,9 @@ const AdminModule = () => {
               <Link to="/digital-wind/admin/cms" className={ splitLocation === 'cms' ? style["active"] : ''}>Система управления контентом</Link>
             </li>
             <li className={style["admin-menu__link"]}>
+              <Link to="/digital-wind/admin/news" className={ splitLocation === 'news' ? style["active"] : ''}>Управление новостями</Link>
+            </li>
+            <li className={style["admin-menu__link"]}>
               <Link to="/digital-wind/admin/reg-work" className={ splitLocation === 'reg-work' ? style["active"] : ''}>Регистрация работы</Link>
             </li>
             <li className={style["admin-menu__link"]}>
@@ -41,6 +45,7 @@ const AdminModule = () => {
             <Routes>
               <Route path="/digital-wind/admin/applications" element={<AdminApplications/>} />
               <Route path="/digital-wind/admin/cms" element={<AdminCMS/>} />
+              <Route path="/digital-wind/admin/news" element={<AdminNews/>} />
               <Route path="/digital-wind/admin/reg-work" element={<AdminWorkReg/>} />
               <Route path="/digital-wind/admin/user-reg" element={<AdminUserReg/>} />
               <Route path="/digital-wind/admin/users" element={<AdminUser/>} />

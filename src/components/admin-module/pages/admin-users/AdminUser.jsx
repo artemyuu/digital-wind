@@ -47,9 +47,24 @@ const AdminUser = () => {
       <thead>
         <tr>
           <th scope="col">Пользователь</th>
-          <th scope="col" onClick={() => filter('publication', 'countPublications')} style={{cursor: 'pointer'}}>Кол-во публикаций</th>
-          <th scope="col" onClick={() => filter('outerMark', 'outerMarks')} style={{cursor: 'pointer'}}>Оценки от пользователя</th>
-          <th scope="col" onClick={() => filter('innerMark', 'innerMarks')}  style={{cursor: 'pointer'}}>Оценки пользователю</th>
+          <th scope="col">
+            Кол-во публикаций
+            <span onClick={() => filter('publication', 'countPublications')} className="badge bg-secondary" style={{display: 'inline', position: 'relative', left: '15px', bottom: '15px', cursor: 'pointer'}}>
+              &#9947;
+            </span>
+          </th>
+          <th scope="col">
+            Оценки от пользователя
+            <span onClick={() => filter('outerMark', 'outerMarks')} className="badge bg-secondary" style={{display: 'inline', position: 'relative', left: '15px', bottom: '15px', cursor: 'pointer'}}>
+              &#9947;
+            </span>
+            </th>
+          <th scope="col">
+            Оценки пользователю
+            <span onClick={() => filter('innerMark', 'innerMarks')} className="badge bg-secondary" style={{display: 'inline', position: 'relative', left: '15px', bottom: '15px', cursor: 'pointer'}}>
+              &#9947;
+            </span>
+            </th>
           <th scope="col"></th>
         </tr>
       </thead>
