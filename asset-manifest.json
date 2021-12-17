@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/digital-wind/static/css/main.912018f2.chunk.css",
-    "main.js": "/digital-wind/static/js/main.0fb4735a.chunk.js",
-    "main.js.map": "/digital-wind/static/js/main.0fb4735a.chunk.js.map",
+    "main.js": "/digital-wind/static/js/main.cad8942c.chunk.js",
+    "main.js.map": "/digital-wind/static/js/main.cad8942c.chunk.js.map",
     "runtime-main.js": "/digital-wind/static/js/runtime-main.b05b0425.js",
     "runtime-main.js.map": "/digital-wind/static/js/runtime-main.b05b0425.js.map",
     "static/css/2.8cd5c9fe.chunk.css": "/digital-wind/static/css/2.8cd5c9fe.chunk.css",
@@ -48,6 +48,6 @@
     "static/css/2.8cd5c9fe.chunk.css",
     "static/js/2.5c44c209.chunk.js",
     "static/css/main.912018f2.chunk.css",
-    "static/js/main.0fb4735a.chunk.js"
+    "static/js/main.cad8942c.chunk.js"
   ]
 }
