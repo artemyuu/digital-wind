@@ -35,7 +35,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://artemyuu.github.io/digital-wind/",
   "browserslist": {
     "production": [
       ">0.2%",

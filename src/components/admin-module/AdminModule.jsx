@@ -11,6 +11,7 @@ import AdminUserReg from './pages/admin-user-reg/AdminUserReg';
 import AdminUser from './pages/admin-users/AdminUser';
 import AdminNews from './pages/admin-news/AdminNews';
 import AdminJury from './pages/admin-jury/AdminJury';
+import AdminFaq from './pages/admin-faq/AdminFaq';
 
 const AdminModule = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ const AdminModule = () => {
              <Link  to="/digital-wind/admin/applications" className={ splitLocation === 'applications' ? style["active"] : ''}>Заявки</Link>
             </li>
             <li className={style["admin-menu__link"]}>
-              <Link to="/digital-wind/admin/cms" className={ splitLocation === 'cms' ? style["active"] : ''}>Система управления контентом</Link>
+              <Link to="/digital-wind/admin/cms" className={ splitLocation === 'cms' ? style["active"] : ''}>Управление главной страницей</Link>
             </li>
             <li className={style["admin-menu__link"]}>
               <Link to="/digital-wind/admin/news" className={ splitLocation === 'news' ? style["active"] : ''}>Управление новостями</Link>
@@ -54,7 +55,7 @@ const AdminModule = () => {
               <Route path="/digital-wind/admin/cms" element={<AdminCMS/>} />
               <Route path="/digital-wind/admin/news" element={<AdminNews/>} />
               <Route path="/digital-wind/admin/reg-work" element={<AdminWorkReg/>} />
-              <Route path="/digital-wind/admin/faq" element={()=> (<>FAQ</>)} />
+              <Route path="/digital-wind/admin/faq" element={ <AdminFaq/>} />
               <Route path="/digital-wind/admin/user-reg" element={<AdminUserReg/>} />
               <Route path="/digital-wind/admin/users" element={<AdminUser/>} />
               <Route path="/digital-wind/admin/jury" element={<AdminJury/>} />

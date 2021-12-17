@@ -71,11 +71,6 @@ const AuthModal = (props) => {
          <h2 className={style["header-text"]}>Регистрация</h2>
          <TextField label="Логин" variant="outlined" size="small" color="error" margin="dense" value="" autoComplete="off"/>
          <TextField type="password" label="Пароль" variant="outlined" size="small" color="error" value="" margin="dense" autoComplete="off"/>
-         <TextField label="E-mail" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField label="Фамилия" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField label="Имя" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField label="Отчество" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
-         <TextField label="Мобильный" variant="outlined" size="small" color="error" margin="dense" autoComplete="off"/>
         <button  className={style["submit-btn"]}>Зарегистрироватся</button>
         <p className={style["register-link"]} onClick={()=>setModalLogin(!modalLogin)}>Войти</p>
       </form>
