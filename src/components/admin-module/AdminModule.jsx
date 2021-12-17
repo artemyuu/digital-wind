@@ -10,6 +10,7 @@ import AdminWorkReg from './pages/admin-work-reg/AdminWorkReg';
 import AdminUserReg from './pages/admin-user-reg/AdminUserReg';
 import AdminUser from './pages/admin-users/AdminUser';
 import AdminNews from './pages/admin-news/AdminNews';
+import AdminJury from './pages/admin-jury/AdminJury';
 
 const AdminModule = () => {
   const location = useLocation();
@@ -32,6 +33,9 @@ const AdminModule = () => {
               <Link to="/digital-wind/admin/news" className={ splitLocation === 'news' ? style["active"] : ''}>Управление новостями</Link>
             </li>
             <li className={style["admin-menu__link"]}>
+              <Link to="/digital-wind/admin/faq" className={ splitLocation === 'faq' ? style["active"] : ''}>Часто задаваемые вопросы</Link>
+            </li>
+            <li className={style["admin-menu__link"]}>
               <Link to="/digital-wind/admin/reg-work" className={ splitLocation === 'reg-work' ? style["active"] : ''}>Регистрация работы</Link>
             </li>
             <li className={style["admin-menu__link"]}>
@@ -40,6 +44,9 @@ const AdminModule = () => {
             <li className={style["admin-menu__link"]}>
               <Link to="/digital-wind/admin/users" className={ splitLocation === 'users' ? style["active"] : ''}>Модерация пользователей</Link>
             </li>
+            <li className={style["admin-menu__link"]}>
+              <Link to="/digital-wind/admin/jury/all" className={ splitLocation === 'jury' ? style["active"] : ''}>Жюрение</Link>
+            </li>
           </ul>
           <div className={style['admin-content'] + ' custom-scroll'}>
             <Routes>
@@ -47,8 +54,13 @@ const AdminModule = () => {
               <Route path="/digital-wind/admin/cms" element={<AdminCMS/>} />
               <Route path="/digital-wind/admin/news" element={<AdminNews/>} />
               <Route path="/digital-wind/admin/reg-work" element={<AdminWorkReg/>} />
+              <Route path="/digital-wind/admin/faq" element={()=> (<>FAQ</>)} />
               <Route path="/digital-wind/admin/user-reg" element={<AdminUserReg/>} />
               <Route path="/digital-wind/admin/users" element={<AdminUser/>} />
+              <Route path="/digital-wind/admin/jury" element={<AdminJury/>} />
+              <Route path="/digital-wind/admin/jury/all" element={<AdminJury/>} />
+              <Route path="/digital-wind/admin/jury/winners" element={<AdminJury/>} />
+              <Route path="/digital-wind/admin/jury/aside" element={<AdminJury/>} />
             </Routes>
           </div>
         </div>
