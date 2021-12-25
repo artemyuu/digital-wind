@@ -60,8 +60,8 @@ const CardWorkPage = () => {
           </div>
           <div className={style["comment-box"] + ' custom-scroll'}>
             <Comment author="Иван Иванов" date="19/02/2021 19:00" body="Чудесная работа!!!"/>
-            <Comment author="Иван Иванов" date="19/02/2021 19:00" body="Чудесная работа!!!"/>
-            <Comment author="Иван Иванов" date="19/02/2021 19:00" body="Чудесная работа!!!"/>
+            <Comment author="Иван Денисов" date="11/01/2021 13:03" body="Я бы добавил корону"/>
+            <Comment author="Максим Петров" date="20/02/2021 9:00" body="Интересный мир, хотелось бы там побывать"/>
           </div>
         </div>
       </div>
