@@ -61,7 +61,7 @@ const AdminJuryAside = (props) => {
                 <tr key={work.id}>
                   <td>{work.title}</td>
                   <td>{work.mark}</td>
-                  <td><img src={work.img} style={{width: '200px', objectFit: 'none'}}/></td>
+                  <td><img src={work.img} style={{width: '200px', height: '184px', objectFit: 'cover'}}/></td>
                   <td>
                     <a href={work.link}
                     style={{display: 'inline-block',width: '100px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}

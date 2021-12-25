@@ -25,9 +25,9 @@ const AdminJury = () => {
     },
     {
       id: 2,
-      title: 'Колыбель ветров',
+      title: 'Милоглазик',
       mark: 3.7,
-      img: require('../../../../images/work.png').default,
+      img: require('../../../../images/works/glazik.jpg').default,
       link: '/digital-wind/catalog/1',
       contacts: {
         email: 'mishin.vv12@mail.com',
@@ -36,9 +36,9 @@ const AdminJury = () => {
     },
     {
       id: 3,
-      title: 'Розовый вечер',
+      title: 'Моя планета',
       mark: 4.1,
-      img: require('../../../../images/work.png').default,
+      img: require('../../../../images/works/earth.jpg').default,
       link: '/digital-wind/catalog/1',
       contacts: {
         email: 'shishkin123@mail.com',

@@ -13,6 +13,16 @@ const AddWorkForm = () => {
   const [mobileInput, setMobileInput] = useState('');
   const [adressInput, setAdressInput] = useState('');
 
+  const fillOnDbClick = () => {
+    console.log(1);
+    setNameInput('Иван');
+    setSurnameInput('Иванов');
+    setPatrosInput('Иванович');
+    setAgeInput('18');
+    setEmailInput('mail@yandex.ru');
+    setMobileInput('891705432654');
+    setAdressInput('г.Саратов, Саратовская область');
+  }
   
   const onSubmit = () => {
     userService.fillProfile(authUser.id, {
@@ -61,14 +71,14 @@ const AddWorkForm = () => {
           <button className="accent-btn">Отправить</button>
         </form>
       : 
-      <form className={style["add-work-form"]}>
-          <input type="text" placeholder="Имя*" onChange={(e) => setNameInput(e.target.value)} required/>
-          <input type="text" placeholder="Фамилия*" onChange={(e) => setSurnameInput(e.target.value)} required/>
-          <input type="text" placeholder="Отчество*" onChange={(e) => setPatrosInput(e.target.value)} required/>
-          <input type="text" placeholder="Возраст*" onChange={(e) => setAgeInput(e.target.value)} required/>
-          <input type="text" placeholder="Email*" onChange={(e) => setEmailInput(e.target.value)} required/>
-          <input type="text" placeholder="Мобильный*" onChange={(e) => setMobileInput(e.target.value)} required/>
-          <input type="text" placeholder="Адрес*" onChange={(e) => setAdressInput(e.target.value)} required/>
+      <form className={style["add-work-form"]} onDoubleClick={() => fillOnDbClick()}>
+          <input type="text" placeholder="Имя*" value={nameInput} onChange={(e) => setNameInput(e.target.value)} required/>
+          <input type="text" placeholder="Фамилия*" value={surnameInput} onChange={(e) => setSurnameInput(e.target.value)} required/>
+          <input type="text" placeholder="Отчество*" value={patrosInput} onChange={(e) => setPatrosInput(e.target.value)} required/>
+          <input type="text" placeholder="Возраст*" value={ageInput} onChange={(e) => setAgeInput(e.target.value)} required/>
+          <input type="text" placeholder="Email*" value={emailInput} onChange={(e) => setEmailInput(e.target.value)} required/>
+          <input type="text" placeholder="Мобильный*" value={mobileInput} onChange={(e) => setMobileInput(e.target.value)} required/>
+          <input type="text" placeholder="Адрес*" value={adressInput} onChange={(e) => setAdressInput(e.target.value)} required/>
         <button className="accent-btn" onClick={ (e) => { e.preventDefault(); onSubmit(); document.location.reload();} }>Далее</button>
       </form>
       }
